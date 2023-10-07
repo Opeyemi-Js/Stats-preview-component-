@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+:root{
+  --body-font-size: 1.5rem;
+  /* Primary */
+  --main-background:hsl(233, 47%, 7%);
+  --card-background:hsl(244, 38%, 16%);
+  --accent:hsl(277, 64%, 61%);
+  /* Neutral */
+  --white:hsl(0, 0%, 100%);
+  --main-paragraph:hsla(0, 0%, 100%, 0.75);
+  --stats-headings:hsla(0, 0%, 100%, 0.6);
+}
+body{
+  /*background-color: var(--main-background);*/
+  font-size: var(--body-font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main{
+  min-width: 32rem;
+  max-width: 32rem;
+  margin: 15rem 20rem;
+  background-color:var(--card-background);
+  border-radius: 1rem;
+}
+.image-overlay{
+  width: 100%;
+  height: 20rem;
+  background-image: url("./images/image-header-mobile.jpg");
+  background-color: var(--accent);
+  background-position: 100%;
+  background-size: cover;
+  background-blend-mode: multiply;
+  border-radius: 1rem 1rem 0 0;
+}
+.content{
+  text-align: center;
+  margin: 3rem;
+}
+h1,
+h2{
+  font-family: 'Inter, Sans-Serif';
+  color: var(--white);
+}
+h1{
+  font-size: 3.2rem;
+}
+span{
+  color: var(--accent);
+}
+p{
+  font-family: 'Lexan Deca, Sans-Serif';
+  color: var(--main-paragraph);
+  line-height: 2.6rem;
+}
+.details{
+  font-size: 1.8rem;
+  margin: 3rem auto;
+  width: 98%;
+}
+.company-stats,
+.template-stats,
+.qeury-stats{
+  padding-bottom: 2rem;
+}
+@media screen and (min-width:42.8rem){
+  main{
+    min-width: 96rem;
+    max-width: 96rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  figure{
+    width: 50%;
+    order: 2;
+  }
+  .image-overlay{
+    width: 550px;
+    height: 420px;
+    background-image: url("./images/image-header-desktop.jpg");
+    background-size: center;
+    background-position: center;
+    border-radius: 0 1rem 1rem 0;
+  }
+  .content{
+    max-width: 50%;
+    width: 300px;
+    order: 1;
+    text-align: left;
+  }
+  .stats{
+    display: flex;
+    gap: 50px;
+    margin-top: 7rem;
+  }
+}
