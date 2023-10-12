@@ -51,7 +51,7 @@ Below are the css code used to achieve the overlay effect.
   height: 20rem;
   background-image: url("./images/image-header-mobile.jpg");
   background-color: var(--accent);
-  background-position: 100%;
+  background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
   border-radius: 1rem 1rem 0 0;
