@@ -34,7 +34,7 @@ main{
 }
 .image-overlay{
   width: 100%;
-  height: 22rem;
+  height: 25rem;
   background-image: url("./images/image-header-mobile.jpg");
   background-color: var(--accent);
   background-position: center;
