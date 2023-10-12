@@ -33,7 +33,7 @@ main{
   border-radius: 1rem;
 }
 .image-overlay {
-  width: 100%;
+  width: 95%;
   position: relative;
   height: 40rem;
   background-image: url("./images/image-header-desktop.jpg");
