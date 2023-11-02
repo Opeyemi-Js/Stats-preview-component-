@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click to check the solution]([https://stats-preview-card-component123.netlify.app/](https://www.frontendmentor.io/solutions/mobile-first-stats-preview-card-component-bxmixVe2kw)
+- Solution URL: [Click to check the solution](https://www.frontendmentor.io/solutions/mobile-first-stats-preview-card-component-bxmixVe2kw)
 - Live Site URL: [Click to view live ](https://stats-preview-card-component123.netlify.app/)
 
 ## My process
