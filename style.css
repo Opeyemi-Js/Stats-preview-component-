@@ -1,107 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
 }
-html{
-  font-size: 62.5%;
+html {
+  scroll-behavior: smooth;
 }
-:root{
-  --body-font-size: 1.5rem;
+:root {
   /* Primary */
-  --main-background:hsl(233, 47%, 7%);
-  --card-background:hsl(244, 38%, 16%);
-  --accent:hsl(277, 64%, 61%);
-  /* Neutral */
-  --white:hsl(0, 0%, 100%);
-  --main-paragraph:hsla(0, 0%, 100%, 0.75);
-  --stats-headings:hsla(0, 0%, 100%, 0.6);
-}
-body{
-  /*background-color: var(--main-background);*/
-  font-size: var(--body-font-size);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main{
-  min-width: 32rem;
-  max-width: 32rem;
-  margin: 15rem 20rem;
-  background-color:var(--card-background);
-  border-radius: 1rem
-  }
-.image-overlay{
-  width: 100%;
-  height: 20rem;
-  background-image: url("./images/image-header-mobile.jpg");
-  background-color: var(--accent);
-  background-position: 100%;
-  background-size: cover;
-  background-blend-mode: multiply;
-  border-radius: 1rem 1rem 0 0;
-  }
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
 
-.content{
-  text-align: center;
-  margin: 3rem;
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-headings: hsla(0, 0%, 100%, 0.6);
 }
-h1,
-h2{
-  font-family: 'Inter, Sans-Serif';
+body {
+  font-size: 15px;
+  /* background: var(--main-background); */
+}
+.container {
+  min-width: 375px;
+  max-width: 375px;
+  margin: 50px auto;
+  background: var(--card-background);
+  border-radius: 10px;
+}
+.img-container {
+  background-image: url(/images/image-header-mobile.jpg);
+  background-color: var(--accent);
+  background-blend-mode: multiply;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
+}
+.advert {
+  margin: 20px;
+  text-align: center;
   color: var(--white);
 }
-h1{
-  font-size: 3.2rem;
+.advert .advert-header {
+  margin-top: 50px;
 }
-span{
+.advert-body .main-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--main-paragraph);
+  font-family: "Inter", sans-serif;
+  padding: 20px 0;
+}
+.stats-info {
+  padding-bottom: 30px;
+}
+.achievement-stats .stats-info p {
+  color: var(--stat-headings);
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  padding-top: 10px;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  padding-bottom: 20px;
+}
+h2 {
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+}
+span {
   color: var(--accent);
 }
-p{
-  font-family: 'Lexan Deca, Sans-Serif';
-  color: var(--main-paragraph);
-  line-height: 2.6rem;
-}
-.details{
-  font-size: 1.8rem;
-  margin: 3rem auto;
-  width: 98%;
-}
-.company-stats,
-.template-stats,
-.qeury-stats{
-  padding-bottom: 2rem;
-}
-@media screen and (min-width:42.8rem){
-  main{
-    min-width: 96rem;
-    max-width: 96rem;
+
+/* Media Query For Desktop and Tablets View */
+@media (min-width: 765px) {
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 920px;
+    max-width: 1024px;
+    height: 450px;
+    margin: 150px auto;
   }
-  figure{
-    width: 50%;
-    order: 2;
-  }
-  .image-overlay{
-    max-width: 100%;
-    max-height: 100%;
-    background-image: url("./images/image-header-desktop.jpg");
-    background-size: cover;
-    background-position: center;
-    border-radius: 0 1rem 1rem 0;
-  }
-  .content{
-    max-width: 50%;
-    width: 300px;
-    order: 1;
+  .advert {
+    max-width: 36%;
+    margin-top: 50px;
+    padding: 50px;
     text-align: left;
   }
-  .stats{
-    display: flex;
-    gap: 50px;
-    margin-top: 7rem;
+  .img-container {
+    width: 70%;
+    height: inherit;
+    background: url(/images/image-header-desktop.jpg);
+    background-color: var(--accent);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 10px 10px 0;
+    order: 2;
+  }
+ .advert .achievement-stats{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 0;
   }
 }
