@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Click to check the solution]([https://stats-preview-card-component123.netlify.app/](https://www.frontendmentor.io/solutions/mobile-first-stats-preview-card-component-bxmixVe2kw)
+- Live Site URL: [Click to view live ](https://stats-preview-card-component123.netlify.app/)
 
 ## My process
 
@@ -32,6 +32,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - Flexbox
+- Grid
 - Mobile-first workflow
 
 ### What I learned
