@@ -47,16 +47,14 @@ in css. I was able to know about three ways to achieve the effect which are:
 Below are the css code used to achieve the overlay effect.
 
 ```css
-.image-overlay{
-  width: 100%;
-  height: 20rem;
-  background-image: url("./images/image-header-mobile.jpg");
+.img-container {
+  background-image: url(/images/image-header-mobile.jpg);
   background-color: var(--accent);
-  background-position: center;
-  background-size: cover;
   background-blend-mode: multiply;
-  border-radius: 1rem 1rem 0 0;
-}
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
 ```
 
 ### Continued development
