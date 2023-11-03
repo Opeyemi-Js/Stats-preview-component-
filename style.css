@@ -19,7 +19,7 @@ html {
 }
 body {
   font-size: 15px;
-  /* background: var(--main-background); */
+  background: var(--main-background);
 }
 .container {
   min-width: 375px;
